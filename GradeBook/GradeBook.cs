@@ -30,15 +30,25 @@ public class GradeBook
         int grade;
         int gradeCounter=1;
         double classAverage;
-        while (gradeCounter<=10) {
-            Console.WriteLine("Enter the Grade");
-            grade = Convert.ToInt32(  Console.ReadLine());
+        Console.WriteLine("Enter the Grade or Enter -1 for exit");
+        grade = Convert.ToInt32(Console.ReadLine());
+        while (grade!=-1) {
             total=total+grade;
             gradeCounter++;
+            Console.WriteLine("Enter the Grade or -1 for exit");
+            grade = Convert.ToInt32(Console.ReadLine());
         }
-        classAverage = total / 10;
-        Console.WriteLine("total is " + total);
-        Console.WriteLine("class Average is " + classAverage);
+        if(grade != 0)
+        {
+            classAverage = total / gradeCounter;
+            Console.WriteLine("Total is: " + total);
+            Console.WriteLine("Class Avearge is :" + classAverage);
+        }
+        else
+        {
+            Console.WriteLine("No grade are Enter");
+        }
+        
 
     }
 }
