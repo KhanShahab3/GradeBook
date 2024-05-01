@@ -19,7 +19,7 @@ public class GradeBook
    
     public void DiplayMessage()
     {
-        Console.WriteLine("Wellcome To Grade  Book..........",CourseName);
+        Console.WriteLine("Wellcome To Grade  Book..........");
         //Declaration of class contian the 
         //a method name DisplayMessage the recall of this we
         //need the object of class and call its method 
